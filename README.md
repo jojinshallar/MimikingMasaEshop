@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jojinshallar_MimikingMasaEshop&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jojinshallar_MimikingMasaEshop)
+
 使用Masa Framework 1.0.0-rc.1版本+.Net8。
 代码照抄：https://github.com/zhenlei520/Masa.EShop.Demo
 
