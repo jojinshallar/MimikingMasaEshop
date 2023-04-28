@@ -5,7 +5,7 @@ namespace MimikingMasaEshop.Service.Catalog.Infrastructure
     public static class CatalogDbContextSeed
     {
         public static async Task SeedAsync(CatalogDbContext catalogDbContext,IServiceProvider serviceProvider){
-            var dataUpdate=await catalogDbContext.EnumerationSeed() | await catalogDbContext.CatalogBrandSeedAsync();
+            var dataUpdate=await catalogDbContext.EnumerationSeed() || await catalogDbContext.CatalogBrandSeedAsync();
 
             if(dataUpdate){
                 await catalogDbContext.SaveChangesAsync();

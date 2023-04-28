@@ -9,7 +9,7 @@ namespace MimikingMasaEshop.Service.Catalog.Application.Catalogs
 {
     public class CatalogItemHandler
     {
-        private readonly ICatalogItemRepository catalogItemRepository=null!;
+        private readonly ICatalogItemRepository catalogItemRepository;
 
         public CatalogItemHandler(ICatalogItemRepository catalogItemRepository)
         {

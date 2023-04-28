@@ -6,7 +6,6 @@ using MimikingMasaEshop.Service.Catalog.Infrastructure.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//builder.Services.AddControllers();
 #region  注册Swagger
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -63,11 +62,5 @@ await app.MigrateDbContextAsync<CatalogDbContext>(async (context, serviceProvide
 {
     await CatalogDbContextSeed.SeedAsync(context, serviceProvider);
 });
-
-//app.UseHttpsRedirection();
-
-//app.UseAuthorization();
-
-//app.MapControllers();
 
 app.Run();
